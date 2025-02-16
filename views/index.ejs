@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueCare Hospital</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/scripts.js"></script>
+</head>
+<body>
+  <header>
+    <nav id="mainNav">
+      <ul class="nav-list" id="navList">
+        <li><a href="/" id="homeLink" onclick="handleNavigation(event)">Home</a></li>
+        <li><a href="/menu1" id="patientsLink">Patients</a></li>
+        <li><a href="/menu2" id="doctorsLink">Doctors</a></li>
+        <li><a href="/menu3" id="appointmentsLink">Appointments</a></li>
+        <li><a href="/audit" id="auditLink">Audit Log</a></li>
+
+        <li style="margin-left: auto;">
+          <a href="/logout" id="logoutLink" class="logout-btn">Logout</a>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cover" id="coverSection">
+    <img src="img/hospital-management-system.png" alt="TrueCare Hospital" id="coverImage">
+    <div class="overlay" id="coverOverlay"></div>
+  </section>
+
+  <main id="mainContent">
+    <h1 id="welcomeHeading">Welcome to TrueCare Hospital</h1>
+    <p id="tagline">Your health, our promise.</p>
+  </main>
+
+  <footer id="mainFooter">
+    <p id="copyright" style="font-size: 20px; padding: 10px; margin-left: 38%; margin-top: 100%;">&copy; 2024 TrueCare. All rights reserved.</p>
+  </footer>
+
+  <!-- Fixed script path -->
+  <script src="/scripts.js"></script>
+  
+  <!-- Initialize page functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializePage();
+    });
+  </script>
+</body>
+</html>
